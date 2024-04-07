@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+        integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="SCRIPT/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="to-do-container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="to-do-form">
+            <p>Adicionar Tarefa</p>
+            <div class="form-control">
+                <input type="text" id="to-do-input" placeholder="Informe a Tarefa">
+                <button type="submit" title="Adicionar Tarefa" class="add-button">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Editar Tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit" title="Confirmar Edição" id="confirm-edit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn" title="Cancelar Edição">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar Tarefa">
+                    <button id="erase-button" title="Apagar Caracteres">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar: </h4>
+                <select id="filter-select">
+                    <option value="all">Todas</option>
+                    <option value="done">Concluída</option>
+                    <option value="todo">Pendentes</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list" class=".delete-elements">
+
+        </div>
+        <div class="delete">
+            <button title="Apagar Todos os Itens da Lista" id="delete-all">
+                <span class="material-symbols-outlined">delete_sweep</span>
+            </button>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

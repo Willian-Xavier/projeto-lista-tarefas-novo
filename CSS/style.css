@@ -1,0 +1,231 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #333;
+}
+
+body {
+    background-image: url("../img/13182208_5166950.jpg");
+    /* background-position: center; */
+    background-size: initial;
+}
+
+/* Estilização dos botões */
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: none;
+    padding: .3rem .7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* Input e Select */
+
+input, select {
+    padding: 0.25rem 0.5rem;
+    outline: none;
+}
+
+/* Form */
+
+.hide{ /* Deve ser utilizada em <form id="edit-form" class="">*/
+    display: none;
+}
+
+/* Todo Header */
+
+.to-do-container{
+    max-width: 800px;
+    margin: 8rem auto;
+    background-color: #ebc0c0c4;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.to-do-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #847171;
+}
+
+/* Todo Form */
+
+#to-do-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #847171;
+}
+
+#to-do-form p,
+#edit-form p{ /* Separa os itens do parágrafo e os coloca em negrito*/
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#edit-input{
+    border-radius: 7px;
+    border: none;
+    padding: 0.7rem;
+}
+
+#confirm-edit{
+    border-radius: 7px;
+}
+
+/* Deixa os inputs ao lado dos botões */
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3rem;
+}
+
+#to-do-input{
+    width: 300px;
+    border-radius: 7px;
+    border: none;
+    padding: 0.7rem;
+}
+
+.add-button, #erase-button{
+    border-radius: 5px;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+    border-radius: 7px;
+}
+
+/* Todo toolbar */
+
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #847171;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+
+#search{
+    border-right: 1px solid #847171;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search input{
+    width: 100%;
+    margin-right: .4rem;
+    border-radius: 7px;
+    border: none;
+    padding: 0.7rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select{
+    flex: 1;
+    
+}
+
+#filter-select{
+    border-radius: 7px;
+    border: none;
+}
+
+#filter-select:hover{
+    background-color: rgba(239, 215, 254, 0.853);
+    transition: 0.9s;
+}
+
+/* Todo List */
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #847171;
+    transition: .3s;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #14870c;
+    border-radius: 8px;
+}
+
+.done h3{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+/* todo-list */
+/* #todo-list{
+    background-color: #e0f9de60;
+    border-radius: 8px;
+} */
+
+#delete-all{
+    margin: 2.5rem auto;
+    padding: 1rem;
+    width: 25%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#delete-all:hover {
+    background-color: #102f5e;
+    color: #fff;
+}
+
+#delete-all:hover > span {
+    color: #fff;
+}
